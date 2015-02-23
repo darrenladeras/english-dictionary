@@ -1,6 +1,4 @@
 # english-dictionary
 ===================
 
-My First Dictionary App
-
-Have a :beer:
+My First Dictionary 2015.
