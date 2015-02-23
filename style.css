@@ -1,0 +1,22 @@
+#container {
+  max-width: 800px;
+  margin: 0 auto; }
+  #container header {
+    overflow: auto;
+    border-bottom: 1px solid #eee; }
+    #container header h1, #container header .form-wrapper {
+      float: left;
+      width: 50%; }
+    #container header .form-wrapper {
+      padding-top: 30px;
+      text-align: right; }
+  #container #main-content {
+    clear: both;
+    display: block;
+    max-width: 190px;
+    margin: 0 auto; }
+
+.list-1 li {
+  list-style-type: disc; }
+
+/*# sourceMappingURL=mystyle.css.map */
