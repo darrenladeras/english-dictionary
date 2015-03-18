@@ -1,4 +1,6 @@
 # english-dictionary
 ===================
 
-My First Dictionary 2015.
+English Dictionary
+
+An application to search a meaning of a word for a fast and easy way of researching.
