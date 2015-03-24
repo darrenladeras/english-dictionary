@@ -19,4 +19,13 @@
 .list-1 li {
   list-style-type: disc; }
 
-/*# sourceMappingURL=mystyle.css.map */
+.three-cols .col-item {
+  float: left; }
+.three-cols .col-1 {
+  width: 5%; }
+.three-cols .col-2 {
+  width: 30%; }
+.three-cols .col-3 {
+  width: 65%; }
+
+/*# sourceMappingURL=style.css.map */
