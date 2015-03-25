@@ -20,12 +20,14 @@
     // Create elements
     var b  = document.body,
         h1 = document.createElement('h1'),
+        h2 = document.createElement('h2'),
         cols = document.createElement('div'),
         col1 = document.createElement('div'),
         col2 = document.createElement('div'),
         col3 = document.createElement('div'),
         AtoZlist = document.createElement('ul'),
         nameList = document.createElement('ul'),
+        p2 = document.createElement('p'),
         p = document.createElement('p');
 
     // Set Attributes
@@ -35,7 +37,6 @@
     col3.className = 'col-item col-3';
 
     var AtoZ = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    console.log(AtoZ);
 
     var container = document.getElementById('container');
     // Create a list for all the letters a-z
@@ -71,10 +72,12 @@
 
     if ( typeof getUrl !== 'undefined' ) { // Remove error on index page
         var container = document.getElementById('container');
-        h1.appendChild(document.createTextNode(words[getUrl].name));
+        h2.appendChild(document.createTextNode(words[getUrl].name));
         p.appendChild(document.createTextNode(words[getUrl].description));
-        col3.appendChild(h1);
+        p2.appendChild(document.createTextNode(words[getUrl].secondDescription));
+        col3.appendChild(h2);
         col3.appendChild(p);
+        col3.appendChild(p2);
         cols.appendChild(col3);
         container.appendChild(cols);
     }
