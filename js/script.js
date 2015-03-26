@@ -31,12 +31,12 @@
         p = document.createElement('p');
 
     // Set Attributes
-    cols.id = 'cols three-cols';
+    cols.className = 'cols three-cols';
     col1.className = 'col-item col-1';
     col2.className = 'col-item col-2';
     col3.className = 'col-item col-3';
 
-    var AtoZ = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    var AtoZ = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
     var container = document.getElementById('container');
     // Create a list for all the letters a-z
