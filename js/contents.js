@@ -69,5 +69,12 @@ var words = [
         secondDescription: 'a fabric woven from the hair of camels or goats.',
         origin: 'Middle English',
         firstUse: '14th century'
+    }, {
+        name: 'Ability',
+        type: 'noun',
+        description: 'possession of the means or skill to do something.',
+        secondDescription: 'a fabric woven from the hair of camels or goats.',
+        origin: 'Middle English',
+        firstUse: '14th century'
     }
 ];
