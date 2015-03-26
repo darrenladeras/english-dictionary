@@ -1,10 +1,19 @@
+body
+	margin: 0
+	background-color: #EEE8AA
+	color: #8B864E
+
 #container
 	max-width: 800px
 	margin: 0 auto
+	overflow: auto
+
+a
+	color: #8B864E
+	text-decoration: none
 	
 header
 	overflow: auto
-	border-bottom: 1px solid #eee
 
 h1
 	float: left
@@ -26,18 +35,43 @@ h1
 		list-style-type: disc
 
 .three-cols
+	background-color: #F5F5DC
+	overflow: auto
+
 .col-item
 	float: left
 
 .col-1
-	width: 5%
+	width: 6%
+	border-left: 1px solid #CDC673
+	background-color: #BDB76B
+	a
+		text-align: center
+		display: block
+		color: #666633
+		padding: 2.67px 0
+		font-size: 0.8em
+		&:hover
+			background-color: #666633
+			color: #FFF
 
 .col-2
-	width: 30%
+	width: 20%
+	background-color: #666633
+	a
+		padding: 15px 20px
+		display: block
+		color: #BDB76B
+		&:hover
+			background-color: #F5F5DC
+			color: #666633
 
 .col-3
-	width: 65%
+	width: 68.8%
+	padding: 20px
+	min-height: 488px
 			
 ul
 	list-style-type: none
 	padding: 0
+	margin: 0
