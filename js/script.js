@@ -61,8 +61,7 @@
 
         a.href = '?id=' + i; //toSlug(name);
         a.appendChild(document.createTextNode(words[i].name));
-        a.setAttribute('id', 'link' + ' ' + words[i].name);
-        a.setAttribute('class', words[i].name);
+        a.setAttribute('class', 'link' + ' ' + toSlug(words[i].name));
         li.appendChild(a);
         nameList.appendChild(li);
         col2.appendChild(nameList);
@@ -71,6 +70,7 @@
     }
 
     if ( typeof getUrl !== 'undefined' ) { // Remove error on index page
+    function definitions() {
         var container = document.getElementById('container');
         h2.appendChild(document.createTextNode(words[getUrl].name));
         p.appendChild(document.createTextNode(words[getUrl].description));
@@ -81,4 +81,34 @@
         cols.appendChild(col3);
         container.appendChild(cols);
     }
+
+    definitions();
+}
+})(window, document);
+
+(function(window, document) {
+    var inputs = document.getElementsByTagName('input');
+    var submit = document.getElementsByTagName('button');
+
+    var text = inputs[0];
+    var submit = submit[0];
+
+    function toTitleCase(str) {
+        return str.replace(/\b\w/g, function (txt) { return txt.toUpperCase(); });
+    }
+
+    submit.addEventListener('click', function() {
+        var convertToTitleCase = toTitleCase(text.value);
+
+        if($_POST != null && typeof $_POST['id'] != 'undefined')
+                    window.alert($_POST['id']);
+
+        if ( text.value !== "" ) {
+            alert(convertToTitleCase);
+
+        } else {
+            return false;
+            // alert('Not Found!');
+        }
+    }, false)
 })(window, document);
