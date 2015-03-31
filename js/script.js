@@ -100,12 +100,11 @@
     submit.addEventListener('click', function() {
         var convertToTitleCase = toTitleCase(text.value);
 
-        if($_POST != null && typeof $_POST['id'] != 'undefined')
-                    window.alert($_POST['id']);
-
         if ( text.value !== "" ) {
             alert(convertToTitleCase);
-
+            if ( convertToTitleCase = words[0].name ) {
+                console.log('shit!');
+            }
         } else {
             return false;
             // alert('Not Found!');
