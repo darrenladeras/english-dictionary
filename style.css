@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background-color: #EEE8AA;
-  color: #8B864E; }
+  color: #8B864E;
+  font-family: "PT Sans", sans-serif; }
 
 #container {
   max-width: 800px;
@@ -53,6 +54,9 @@ h1, .form-wrapper {
   .three-cols .col-2 {
     width: 20%;
     background-color: #666633; }
+    .three-cols .col-2 ul {
+      max-height: 594px;
+      overflow: scroll; }
     .three-cols .col-2 a {
       padding: 15px 20px;
       display: block;
